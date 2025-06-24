@@ -4,7 +4,7 @@
   "description": "Capability for the pake app.",
   "webviews": ["pake"],
   "remote": {
-    "urls": ["https://*.*"]
+    "urls": ["*://*"]
   },
   "permissions": [
     "shell:allow-open",
@@ -19,6 +19,8 @@
     "notification:allow-get-active",
     "notification:allow-register-listener",
     "notification:allow-register-action-types",
-    "notification:default"
+    "notification:default",
+    "http:default",
+    "http:allow-fetch"
   ]
 }
