@@ -120,7 +120,7 @@ jobs:
           npm install shelljs
           npm install axios
 
-      - name: Build with 
+      - name: Build with pake-cli
         run: |
           node ./script/build_with_pake_cli.js
         env:
@@ -141,7 +141,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: output-${{ inputs.platform }}.zip
-          path: node_modules//output/*
+          path: node_modules/pake-cli/output/*
           retention-days: 3
 
       - name: Rust cache store
