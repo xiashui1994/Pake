@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "app": {
     "withGlobalTauri": true,
+    "security": {
+      "csp": null
+    },
     "trayIcon": {
       "iconPath": "png/weread_512.png",
       "iconAsTemplate": false,
